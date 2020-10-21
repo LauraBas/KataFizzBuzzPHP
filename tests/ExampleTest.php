@@ -22,6 +22,13 @@ class FizzBuzzTest extends TestCase {
 	
 			$this->assertEquals('Buzz', $result);
 		}
+	public function test_return_FizzBuzz_if_value_multiple_5_and_3(
+		) {
+			$fizzbuzz = new FizzBuzz();
+			$result = $fizzbuzz->changeValue(15);
+	
+			$this->assertEquals('FizzBuzz', $result);
+		}
 
 
 }
