@@ -29,6 +29,13 @@ class FizzBuzzTest extends TestCase {
 	
 			$this->assertEquals('FizzBuzz', $result);
 		}
+		public function test_return_value_if_is_not_multiple_3_5(
+			) {
+				$fizzbuzz = new FizzBuzz();
+				$result = $fizzbuzz->changeValue(8);
+		
+				$this->assertEquals(8, $result);
+			}
 
 
 }
